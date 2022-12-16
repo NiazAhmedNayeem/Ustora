@@ -108,11 +108,19 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{route('home')}}">Home</a></li>
+                    <li class=""><a href="{{route('home')}}">Home</a></li>
                     <li><a href="{{route('about')}}">About</a></li>
-                    <li><a href="{{route('all.product')}}">All product</a></li>
-                    <li>
-                        <a href="">Category</a>
+                    <li><a href="{{route('website.all-product')}}">All product</a></li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Niaz</li>
+                            <li class="dropdown-item">Niaz</li>
+                            <li class="dropdown-item">Niaz</li>
+{{--                            @foreach($categories as $category)--}}
+{{--                                <li><a href="{{route('training.category', ['id' => $category->id])}}" class="dropdown-item fw-bold">{{$category->name}}</a></li>--}}
+{{--                            @endforeach--}}
+                        </ul>
                     </li>
                     <li><a href="{{route('contact')}}">Contact</a></li>
                 </ul>
